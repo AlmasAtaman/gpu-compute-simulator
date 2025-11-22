@@ -67,8 +67,7 @@ double Workload::getExecutionTime() const {
 
 // Factory methods for common workloads
 std::unique_ptr<Workload> Workload::createMatrixMultiply(size_t M, size_t N, size_t K) {
-    // Grid: ceil(M/16) x ceil(N/16)
-    // Block: 16 x 16 threads
+
     size_t grid_x = (M + 15) / 16;
     size_t grid_y = (N + 15) / 16;
 

@@ -3,7 +3,7 @@
 
 namespace GPUSim {
 
-// Thread implementation
+// Thread implementation; Foundational
 Thread::Thread(ThreadID tid, WarpID wid, BlockID bid)
     : thread_id_(tid),
       warp_id_(wid),
@@ -19,7 +19,7 @@ Warp::Warp(WarpID wid, BlockID bid, size_t num_threads)
       block_id_(bid),
       state_(ExecutionState::READY),
       program_counter_(0),
-      active_mask_((1ULL << num_threads) - 1), // All threads active initially
+      active_mask_((1ULL << num_threads) - 1), 
       instructions_executed_(0),
       cycles_stalled_(0) {
 

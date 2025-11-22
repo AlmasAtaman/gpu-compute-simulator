@@ -91,6 +91,5 @@ public:
     void resetMetrics();
 };
 
-} // namespace GPUSim
-
+} 
 #endif // COMPUTE_UNIT_H
