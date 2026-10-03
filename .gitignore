@@ -45,9 +45,3 @@ test.exe
 
 # Simulation output files
 *.csv
-
-# Build outputs
-*.exe
-*.o
-*.obj
-build/
